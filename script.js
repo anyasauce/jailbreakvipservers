@@ -12,10 +12,11 @@ const serverLinks = [
     "https://www.roblox.com/share?code=952b598ada0be540b1a93e0974491437&type=Server",
     "https://www.roblox.com/share?code=65191bcfd1ee8745baf02e45a2d4776c&type=Server"
   ];
-
+  
   function joinServer(serverNumber) {
-    window.location.href = serverLinks[serverNumber - 1];
+    window.open(serverLinks[serverNumber - 1], "_blank");
   }
+  
   function copyLink(serverNumber) {
     const linkInput = document.createElement("input");
     linkInput.value = serverLinks[serverNumber - 1];
@@ -25,3 +26,4 @@ const serverLinks = [
     document.body.removeChild(linkInput);
     alert("Link copied to clipboard!");
   }
+  
