@@ -6,17 +6,49 @@
   <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
   <title>Jailbreak - Dupe Checker</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #000B1C;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      color: white;
-    }
+    
+  
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000B1C;
+    color: white;
+  }
+
+  .header {
+    padding: 20px;
+    text-align: center;
+    background-color: #000B1C;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .header p {
+    font-size: 18px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000B1C;
+    border: 2px solid #FFFFFF;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .navbar a:hover {
+    background-color: #555;
+  }
+
 
     .container {
       background-color: darkcyan;
@@ -24,11 +56,17 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       width: 300px;
+      text-align: center;
+      margin-left: 550px;
+      margin-top: 50px;
+      
     }
 
     label {
       display: block;
       margin-bottom: 8px;
+      font-size: 17px;
+      text-align: start;
     }
 
     input {
@@ -46,6 +84,7 @@
       border-radius: 4px;
       cursor: pointer;
       width: 100%;
+      font-size: 17px;
     }
 
     button:hover {
@@ -60,9 +99,38 @@
     .error {
       color: #ff0000;
     }
+
+    .back-button {
+      display: block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+
   </style>
 </head>
 <body>
+  <div class="header">
+    <h1>Roblox Jailbreak Private (VIP) Servers</h1>
+    <p>Here are some free private Roblox Jailbreak VIP servers where you can grind and do contracts without having to worry about cops or exploiters.</p>
+  </div>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="dupelist.html">Dupe Checker</a>
+    <a href="https://docs.google.com/spreadsheets/d/12aPBmrHP5MLwoht9QcBiERPYUmXTJiTbBF43630togE/edit#gid=0">Value List</a>
+  </div>
+
   <div class="container">
     <h2>Dupe Checker</h2>
     <form id="dupeForm">
@@ -571,10 +639,10 @@ function checkDupe() {
     resultElement.textContent = "";
     errorElement.textContent = "Please enter at least 3 characters.";
   } else if (dupeListArray.includes(inputName)) {
-    resultElement.textContent = `${capitalizeFirstLetter(inputName)}, careful this item has duped!`;
+    resultElement.textContent = `CAREFUL, ${capitalizeFirstLetter(inputName)} has DUPED!`;
     errorElement.textContent = "";
   } else {
-    resultElement.textContent = `${capitalizeFirstLetter(inputName)}, has never duped or unknown duped.`;
+    resultElement.textContent = `CLEAN, ${capitalizeFirstLetter(inputName)} has never DUPED!`;
     errorElement.textContent = "";
   }
 }
