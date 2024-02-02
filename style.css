@@ -60,6 +60,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0;
+    margin-bottom: 100px;
+
   }
 
   .server-card {
@@ -73,6 +75,7 @@ body {
 
   .server-card h3 {
     font-size: 30px;
+
   }
 
   .server-card p {
@@ -97,18 +100,6 @@ body {
 
   .copy-button {
     background-color: #3498db;
-  }
-
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-  }
-  .logo {
-    width: 100px;
-    height: 100px;
   }
 
   .contact {
@@ -177,3 +168,45 @@ body {
   .headers p {
     font-size: 30px;
   }
+
+  .footer {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .footer p {
+    font-size: 22px;
+  }
+
+  .switch-server-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: start;
+  }
+  
+  .switch-server-button:hover {
+    background-color: #2980b9;
+  }
+
+  .switch-server-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .switch-server-button:hover {
+    background-color: #2980b9;
+  }
+  
