@@ -50,17 +50,23 @@ body {
   }
 
 
-    .container {
-      background-color: darkcyan;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 300px;
-      text-align: center;
-      margin-left: 480px;
-      margin-top: 50px;
-      
-    }
+  .container {
+  background-color: darkcyan;
+  padding: 40px; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px; 
+  text-align: center;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .container h2 {
+    font-size: 30px;
+  }
+
 
     label {
       display: block;
@@ -71,7 +77,7 @@ body {
 
     input {
       width: 100%;
-      padding: 8px;
+      padding: 15px;
       margin-bottom: 16px;
       box-sizing: border-box;
     }
@@ -79,11 +85,12 @@ body {
     button {
       background-color: #007bff;
       color: #fff;
-      padding: 10px;
+      padding: 12px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
       width: 100%;
+      margin-top: 5px;
       font-size: 17px;
     }
 
@@ -134,8 +141,7 @@ body {
   <div class="container">
     <h2>Dupe Checker</h2>
     <form id="dupeForm">
-      <label for="name">Enter Username:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" placeholder="Enter Username" required>
       <button type="button" onclick="checkDupe()">Check</button>
     </form>
     <p id="result"></p>
