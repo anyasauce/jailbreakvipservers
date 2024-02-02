@@ -26,4 +26,11 @@ const serverLinks = [
     document.body.removeChild(linkInput);
     alert("Link copied to clipboard!");
   }
-  
+
+  function switchToBloxfruitServer() {
+    window.location.href = "bloxfruit.html";
+  }
+
+  function switchToJailbreakServer() {
+    window.location.href = "index.html";
+  }
